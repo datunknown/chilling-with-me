@@ -49,7 +49,7 @@ function prevMusic ()
     playMusic();
 }
 
-function prevMusic ()
+function nextMusic ()
 {
     musicIndex++;
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
@@ -63,7 +63,7 @@ playPauseBtn.addEventListener("click", () => {
 });
 
 prevBtn.addEventListener("click", () => {
-prevMusic();
+    prevMusic();
 });
 
 nextBtn.addEventListener("click", () => {
